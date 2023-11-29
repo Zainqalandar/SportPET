@@ -1,0 +1,58 @@
+/* .header-banner {
+    background: transparent linear-gradient(180deg, #AA182C 0%, #640A16 100%) 0% 0% no-repeat padding-box;
+    height: 9rem;
+} */
+
+.nav-ul{
+    display: none;
+    /* border: 1px solid #AA182C;
+    border: 1px solid white; */
+}
+
+.footer-ul{
+    color: white;
+}
+
+/* User Form  */
+form {
+    border: 2px solid #AA182C;
+    border-radius: 0.8rem;
+    width: 65.5%;
+    max-width: 565px;
+    color: #AA182C;
+    margin-left: 7.2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 9rem 9rem 4rem 9rem;
+}
+
+form label {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-right: 1.2rem;
+}
+
+form input {
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #AA182C;
+}
+
+.btn {
+    width: 80%;
+    text-align: right;
+}
+
+
+.btn button {
+    background: #AA182C;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2.2rem;
+    border: none;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.8%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header  */
+
+.header-banner {
+    position: relative;
+}
+.header-banner img{
+    width: 100%;
+}
+
+.header-banner::after {
+    font-size: 3.5rem;
+    color: white;
+    position: absolute;
+    font-family: system-ui;
+    top: 24px;
+    left: 210px;
+}
+
+header {
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15%;
+
+}
+
+.nav-ul {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: #AA182C;
+    /* width: 55%; */
+    width: 50rem    ;
+
+}
+
+
+
+/* LOGO  */
+.logo {
+    width: 141px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#user {
+    font-size: 2.8rem;
+}
+
+/* .container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  } */
+
+/* Main  */
+main {
+    /* border: 1px solid black; */
+    margin: 3rem auto;
+    height: 44rem;
+    max-width: 86rem;
+}
+
+/* ------------ */
+a:link {
+
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: white;
+}
+
+/* Footer  */
+footer {
+    border-top: 1px solid #AA182C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15%;
+    overflow: hidden;
+    height: 6.5rem;
+}
+
+.logo2 {
+    width: 37px;
+    transform: rotate(27deg);
+}
+
+.logo2 img {
+    width: 100%;
+}
+
+.footer-ul {
+    font-size: 1.5rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    color: #AA182C;
+    /* display: none; */
+    /* color: white; */
+}
+
+.footer-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000000b3;
+}
+
+.about-footer {
+    margin-left: 50px;
+    width: 45rem;
+}
+
+#dis1 {
+    margin-left: 14.8rem;
+}
+
+#user2 {
+    font-size: 2rem;
+}
+
+
+/* For Grid   */
+
+.welcome-container {
+    display: grid;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.welcome-container .box {
+    background: transparent linear-gradient(180deg, #AA182C 0%, #640A16 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0.7rem;
+    position: relative;
+}

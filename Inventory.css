@@ -1,0 +1,17 @@
+.header-banner::after {
+    content: "Inventory";
+    font-family: sans-serif;
+}
+
+.grid__3__cols{
+    grid-template-columns: repeat(3, 1fr);
+    height: 19rem;
+    gap: 2rem;
+
+}
+
+.box > p {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+}

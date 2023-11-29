@@ -1,0 +1,16 @@
+.header-banner::after {
+    content: "Welcome, Justin";
+}
+
+.grid__2__cols {
+    grid-template-columns: repeat(2, 1fr);
+    height: 26rem;
+    gap: 3rem;
+
+}
+
+.box > p {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
