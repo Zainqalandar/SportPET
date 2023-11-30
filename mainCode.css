@@ -34,14 +34,24 @@ header {
     overflow: hidden;
 }
 
-nav {
+/*  */
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15%;
-
+    padding: 15px 0;
+    max-width: 89rem;
+    margin: 0 auto;
 }
-
+.navbar > button{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.navbar button img{
+    width: 100%;
+}
 .nav-ul {
     font-size: 1.5rem;
     display: flex;
@@ -69,17 +79,12 @@ nav {
     font-size: 2.8rem;
 }
 
-/* .container {
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    margin: 0 auto;
-  } */
 
 /* Main  */
 main {
-    /* border: 1px solid black; */
     margin: 3rem auto;
-    height: 44rem;
+    /* height: 44rem; */
+    height: 33rem;
     max-width: 86rem;
 }
 
@@ -96,12 +101,17 @@ a:visited {
 /* Footer  */
 footer {
     border-top: 1px solid #AA182C;
+ 
+}
+.footer_child{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15%;
     overflow: hidden;
+    max-width: 89rem;
+    margin: 0 auto;
     height: 6.5rem;
+
 }
 
 .logo2 {
@@ -163,4 +173,60 @@ footer {
     background: transparent linear-gradient(180deg, #AA182C 0%, #640A16 100%) 0% 0% no-repeat padding-box;
     border-radius: 0.7rem;
     position: relative;
+}
+
+/* Media Queris  */
+@media screen and (max-width: 900px) {
+    .navbar {
+        margin-left: 3rem;
+    }
+    .footer_child {
+        margin: 0 3rem;
+    }
+    .header-banner::after {
+        top: 10px;
+        left: 150px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .navbar > button{
+        display: block;
+        border: none;
+    }
+
+    .header-banner::after {
+        font-size: 2rem;
+    }
+
+    .header-banner::after {
+        top: 5px;
+        left: 150px;
+    }
+    .footer_child {
+        flex-direction: column;
+    }
+    .footer-ul{
+        width: 90%;
+    }
+    .about-footer {
+        margin-left: 0px;
+        /* width: 47rem; */
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        /* background-color: #640A16; */
+    }
+    #dis1 {
+        /* margin-left: 2.8rem; */
+    }
 }

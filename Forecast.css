@@ -1,0 +1,124 @@
+main{
+    height: auto;
+}
+.forecast-title{
+    border-bottom: 1px solid #00000087;
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #AA182C;
+}
+
+.detail_form{
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding: 3rem 0;
+}
+/* .detail_form > div{
+    border: 1px solid black;
+} */
+.detail_form label{
+    color: #AA182C;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+.detai-form-child input{
+    border: 1px solid #AA182C;
+    height: 2rem;
+    outline: none;
+}
+.detai-form-child span{
+    border: 1px solid #AA182C;
+    height: 2rem;
+    border-left: none;
+    color: #AA182C;
+
+}
+.detai-form-child{
+    display: flex;
+    align-items: flex-start;
+}
+.detai-form-child button{
+    display: inline-block;
+    margin-left: 0.3rem;
+    border: none;
+    background-color: white;
+    height: 2.8rem;
+    border: 1px solid #AA182C;
+    padding: 0.2rem 0.7rem;
+    color: #AA182C;
+    font-weight: bold;
+    margin-top: -3px;
+}
+
+/* For detai section  */
+#year{
+    border: 1px solid #AA182C;
+    outline: none;
+    background-color: white;
+    width: 93px;
+    height: 2rem;
+}
+
+#Quantity{
+    width: 8rem;
+}
+
+/* Table  */
+.red-header {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.red-header th {
+    background-color: #AA182C;
+    border: 1px solid #AA182C;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+.red-header td {
+    border-bottom: 1px solid #AA182C;
+    padding: 8px;
+}
+
+tbody {
+    border: 1px solid #AA182C;
+}
+tr:nth-child(even){
+    background: #F7ECEE 0% 0% no-repeat padding-box;
+}
+
+/* Tible title  */
+
+.table-title{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+.table-title button{
+    display: inline-block;
+    border: none;
+    background-color: #AA182C;
+    height: 2.8rem;
+    border: 1px solid #AA182C;
+    padding: 0.2rem 0.7rem;
+    color: white;
+    font-weight: bold;
+}
+.table-title h1{
+    font-size: 2rem;
+    color: #AA182C;
+    font-weight: normal;
+}
+
+
+
