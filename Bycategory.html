@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="mainCode.css">
+    <link rel="stylesheet" href="Bycategory.css">
+    <title>Bycategory</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Sportpets-logo.png" alt="">
+                </div>
+                <ul class="nav-ul">
+                    <li>Shipping</li>
+                    <li>Inventory</li>
+                    <li>Customer Sevices</li>
+                    <li>Adinistrative</li>
+                    <li><span id="user" class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                        <div class="user-bottom">
+                            <p>Account Information</p>
+                            <p>Change Password</p>
+                            <p>Logout</p>
+                        </div>
+                    </li>
+                </ul>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var toggleButton = document.getElementById("user");
+                        var contentDiv = document.getElementsByClassName("user-bottom")[0];
+
+                        toggleButton.addEventListener("click", function () {
+                            if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
+                                contentDiv.style.display = "block";
+                            } else {
+                                contentDiv.style.display = "none";
+                            }
+                            console.log('user information')
+                        });
+                    });
+                </script>
+                <button><img src="4781852_burger_line_list_menu_nav_icon.png" alt=""></button>
+            </div>
+        </nav>
+        <!-- <div style="border: 1px solid black; width: 89rem; margin: auto;"></div> -->
+        <div class="header-banner">
+            <img src="Screenshot from 2023-11-29 10-38-29.png" alt="">
+        </div>
+    </header>
+    <!-- Main  -->
+    <main>
+        <section class="forecast_section">
+            <div class="forecast-title">
+                <p> <b>Forecast Report</b> | Item Forecast</p>
+            </div>
+            <div class="detail">
+                <form action="">
+                    <div class="detail_form">
+                        <div>
+                            <label for="year">Year</label>
+                            <select id="year" name="year">
+                                <option value="2023">Select</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </div>
+                        <div class="detai-form-child">
+                            <div>
+                                <label for="">Brand</label>
+                                <input type="text" name="" value="  Select" id="">
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </div>
+                        </div>
+                        <div class="detai-form-child">
+                            <div>
+                                <label for="">Category</label>
+                                <input type="text" value="  Select" name="" id="Category">
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </div>
+                            <!-- <button>Smart Fill</button> -->
+                        </div>
+                    </div>
+                    <div class="detail_form" id="detail-id">
+                        <div class="detai-form-child" id="detail-form-id">
+                            <div>
+                                <label for="">Item Number</label>
+                                <input type="text" value="Select" name="" id="Category">
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </div>
+                        </div>
+                        <div class="next-pre-btn">
+                            <button>Previous</button>
+                            <button>Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="table-section">
+            <div class="detail-table">
+                <div class="table-title">
+                    <h1>Mickey Chambray Collar Small</h1>
+                    <button>Download Spreadsheet</button>
+                </div>
+
+                <!-- table  -->
+                <div class="scroll-x">
+                    <table class="red-header">
+                        <thead>
+                            <tr>
+                                <th>Item #</th>
+                                <th>Year</th>
+                                <th>Week</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th>On Hand Total</th>
+                                <th>Order [ order sum + alloc + open ]</th>
+                                <th>Unconfirmed [ POP 10110 ]</th>
+                                <th>Confirm [Vender]</th>
+                                <th>On Water [ Shipping Recap ]</th>
+                                <th>Total Stack</th>
+                                <th>Forcast</th>
+                                <th>Net QTY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>weak 1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- Add more rows here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer_child">
+            <div class="logo2">
+                <img src="main-thumb-186359068-200-gcbmcjgrtacasjtuxwkkjzmzxdlsmguo.jpeg" alt="foot">
+            </div>
+            <div class="about-footer">
+                <div>
+                    <ul class="footer-ul">
+                        <li>Shipping</li>
+                        <li>Inventory</li>
+                        <li>Customer Sevices</li>
+                        <li>Adinistrative</li>
+                        <li><span id="user2" class="material-symbols-outlined">
+                                account_circle
+                            </span></li>
+                    </ul>
+                </div>
+                <div class="footer-description">
+                    <p id="dis1">Terms & conditions &nbsp; | &nbsp; privecy policy</p>
+                    <p>Copywright SportPec Designs 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

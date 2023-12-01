@@ -15,3 +15,22 @@
     bottom: 2rem;
     left: 3rem;
 }
+
+@media screen and (max-width: 900px) {
+    .grid__3__cols{
+        margin: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        height: 30rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        height: auto;
+    }
+    .grid__3__cols{
+        grid-template-columns: repeat(1, 1fr);
+        height: 57rem ;
+    }
+}

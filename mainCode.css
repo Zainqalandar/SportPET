@@ -10,15 +10,19 @@ html {
 body {
     box-sizing: border-box;
     font-family: sans-serif;
+    /* overflow: hidden; */
 }
 
 /* Header  */
 
 .header-banner {
     position: relative;
+    height: 9.3rem;
 }
+
 .header-banner img{
     width: 100%;
+    height: 100%;
 }
 
 .header-banner::after {
@@ -77,6 +81,7 @@ header {
 
 #user {
     font-size: 2.8rem;
+    cursor: pointer;
 }
 
 
@@ -183,10 +188,10 @@ footer {
     .footer_child {
         margin: 0 3rem;
     }
-    .header-banner::after {
+    /* .header-banner::after {
         top: 10px;
         left: 150px;
-    }
+    } */
 }
 @media screen and (max-width: 600px) {
 
@@ -202,13 +207,13 @@ footer {
         border: none;
     }
 
-    .header-banner::after {
+    /* .header-banner::after {
         font-size: 2rem;
-    }
+    } */
 
     .header-banner::after {
-        top: 5px;
-        left: 150px;
+        /* top: 5px; */
+        left: 122px;
     }
     .footer_child {
         flex-direction: column;
@@ -226,7 +231,15 @@ footer {
     body{
         /* background-color: #640A16; */
     }
+   
     #dis1 {
-        /* margin-left: 2.8rem; */
+        margin-left: 8.8rem;
+    }
+    .footer-ul{
+        display: none;
+    }
+    .header-banner::after {
+        /* top: 5px; */
+        left: 90px;
     }
 }

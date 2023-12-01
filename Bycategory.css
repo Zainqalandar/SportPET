@@ -1,0 +1,261 @@
+#user {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-ul:focus {
+    outline: #AA182C 2px solid;
+}
+
+.user-bottom {
+    border: 1px solid #AA182C;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    right: 224px;
+    display: none;
+}
+
+.user-bottom p {
+    border-bottom: 0.5px solid #AA182C;
+    padding: 3px 10px;
+    background: white;
+}
+
+
+/* .user-bottom:hover{
+    display: b;
+} */
+
+
+main {
+    height: auto;
+}
+
+.forecast-title {
+    border-bottom: 1px solid #00000087;
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #AA182C;
+}
+
+.header-banner::after {
+    content: "Inventory";
+    font-family: sans-serif;
+}
+
+.detail_form {
+    border-bottom: 1px solid #00000087;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding: 2.5rem 0;
+}
+
+/* .detail_form > div{
+    border: 1px solid black;
+} */
+.detail_form label {
+    color: #AA182C;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+.detai-form-child input {
+    border: 1px solid #AA182C;
+    height: 2rem;
+    outline: none;
+}
+
+.detai-form-child span {
+    border: 1px solid #AA182C;
+    height: 2rem;
+    border-left: none;
+    color: #AA182C;
+
+}
+
+.detai-form-child {
+    display: flex;
+    align-items: flex-start;
+}
+
+.detai-form-child button {
+    display: inline-block;
+    margin-left: 0.3rem;
+    border: none;
+    background-color: white;
+    height: 2.8rem;
+    border: 1px solid #AA182C;
+    padding: 0.2rem 0.7rem;
+    color: #AA182C;
+    font-weight: bold;
+    margin-top: -3px;
+}
+
+/* For detai section  */
+#year {
+    border: 1px solid #AA182C;
+    outline: none;
+    background-color: white;
+    width: 93px;
+    height: 2rem;
+}
+
+
+#detail-form-id input {
+    padding: 0 2rem;
+}
+
+.next-pre-btn button {
+    display: inline-block;
+    border: none;
+    background-color: white;
+    height: 2.8rem;
+    border: 1px solid #AA182C;
+    padding: 0.2rem 0.7rem;
+    color: #AA182C;
+    font-weight: bold;
+    width: 7rem;
+}
+
+.next-pre-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10.5rem;
+    margin-left: 7.8rem;
+}
+
+#detail-id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 152px;
+    border: none;
+}
+
+
+/* Table  */
+.red-header {
+    border-collapse: collapse;
+    width: 86rem;
+}
+
+.scroll-x {
+    overflow-x: scroll;
+
+}
+
+.red-header th {
+    background-color: #AA182C;
+    border: 1px solid #AA182C;
+    color: white;
+    font-weight: bold;
+    padding: 9px 4px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.red-header td {
+    border: 1px solid #AA182C;
+    padding: 8px 2px;
+}
+
+
+
+tbody {
+    border: 1px solid #AA182C;
+}
+
+tr:nth-child(even) {
+    background: #F7ECEE 0% 0% no-repeat padding-box;
+}
+
+/* Tible title  */
+
+.table-title {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+
+.table-title button {
+    display: inline-block;
+    border: none;
+    background-color: #AA182C;
+    height: 2.8rem;
+    border: 1px solid #AA182C;
+    padding: 0.2rem 0.7rem;
+    color: white;
+    font-weight: bold;
+}
+
+.table-title h1 {
+    font-size: 2rem;
+    color: #AA182C;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 840px) {
+    main {
+        padding: 0 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .detail_form {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+    #year{
+        width: 205px;
+        height: 2.3rem;
+    }
+    
+    /* .red-header th {
+        font-size: 0.9rem;
+
+    } */
+    
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    /* .red-header th {
+        font-size: 0.5rem;
+        
+    } */
+    #year {
+        width: 206px;
+    }
+    #detail-id{
+        padding-right: 68px;
+    }
+    .table-title {
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: normal;
+    }
+    #detail-form-id input {
+        padding: 0 0rem;
+        width: 15rem;
+    }
+
+    .next-pre-btn {
+        gap: 3.5rem;
+    }
+
+}
