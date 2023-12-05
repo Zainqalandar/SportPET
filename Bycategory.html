@@ -17,22 +17,26 @@
         <nav>
             <div class="navbar">
                 <div class="logo">
-                    <img src="Sportpets-logo.png" alt="">
+                    <a href="Authlogin.html"><img src="Sportpets-logo.png" alt=""></a>
                 </div>
                 <ul class="nav-ul">
-                    <li>Shipping</li>
-                    <li>Inventory</li>
+                    <a href="Welcome.html">
+                        <li>Shipping</li>
+                    </a>
+                    <a href="Inventory.html">
+                        <li>Inventory</li>
+                    </a>
                     <li>Customer Sevices</li>
                     <li>Adinistrative</li>
                     <li><span id="user" class="material-symbols-outlined">
                             account_circle
                         </span>
-                        <div class="user-bottom">
-                            <p>Account Information</p>
-                            <p>Change Password</p>
-                            <p>Logout</p>
-                        </div>
                     </li>
+                    <div class="user-bottom">
+                        <p>Account Information</p>
+                        <p>Change Password</p>
+                        <p>Logout</p>
+                    </div>
                 </ul>
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
@@ -66,18 +70,14 @@
             <div class="detail">
                 <form action="">
                     <div class="detail_form">
-                        <div>
-                            <label for="year">Year</label>
-                            <select id="year" name="year">
-                                <option value="2023">Select</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                            </select>
-                        </div>
-                        <div class="detai-form-child">
+                        <div class="year-box">
                             <div>
-                                <label for="">Brand</label>
-                                <input type="text" name="" value="  Select" id="">
+                                <label for="year">Year</label>
+                                <select id="year" name="year">
+                                    <option style="display: none;" value="2023">&nbspSelect</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                </select>
                             </div>
                             <div>
                                 <span class="material-symbols-outlined">
@@ -87,8 +87,23 @@
                         </div>
                         <div class="detai-form-child">
                             <div>
+                                <label for="">Brand</label>
+                                <select name="" id="">
+                                    <option value="">&nbspSelect</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </div>
+                        </div>
+                        <div class="detai-form-child" id="Category" >
+                            <div>
                                 <label for="">Category</label>
-                                <input type="text" value="  Select" name="" id="Category">
+                                <select name="" id="ctegry">
+                                    <option value="">&nbspSelect</option>
+                                </select>
                             </div>
                             <div>
                                 <span class="material-symbols-outlined">
@@ -102,7 +117,9 @@
                         <div class="detai-form-child" id="detail-form-id">
                             <div>
                                 <label for="">Item Number</label>
-                                <input type="text" value="Select" name="" id="Category">
+                                <select name="" id="">
+                                    <option value="">&nbspSelect</option>
+                                </select>
                             </div>
                             <div>
                                 <span class="material-symbols-outlined">
@@ -177,10 +194,10 @@
             <div class="about-footer">
                 <div>
                     <ul class="footer-ul">
-                        <li>Shipping</li>
-                        <li>Inventory</li>
-                        <li>Customer Sevices</li>
-                        <li>Adinistrative</li>
+                        <li><a href="Welcome.html">Shipping</a></li>
+                        <li><a href="Inventory.html">Inventory</a></li>
+                        <li><a href="Forecast.html">Customer Sevices</a></li>
+                        <li><a href="Bycategory.html">Adinistrative</a></li>
                         <li><span id="user2" class="material-symbols-outlined">
                                 account_circle
                             </span></li>

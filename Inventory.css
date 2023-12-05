@@ -1,6 +1,5 @@
-.header-banner::after {
+main::after {
     content: "Inventory";
-    font-family: sans-serif;
 }
 
 .grid__3__cols{

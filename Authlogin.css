@@ -2,7 +2,6 @@
     background: transparent linear-gradient(180deg, #AA182C 0%, #640A16 100%) 0% 0% no-repeat padding-box;
     height: 9rem;
 } */
-
 .nav-ul {
     display: none;
 }
@@ -19,17 +18,28 @@ form {
 }
 
 .form {
+    box-sizing: border-box;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 9rem 9rem 4rem 9rem;
+    height: 27rem;
+    gap: 1.5rem;
+    padding-top: 50px;
+}
+
+.form > div {
+    text-align: end;
+    width: 61%;
 }
 
 form label {
     font-size: 2.2rem;
     font-weight: bold;
     margin-right: 1.2rem;
+    font-size: 30px;
+    font-family: Open Sans, Bold;
 }
 
 form input {
@@ -38,8 +48,13 @@ form input {
 }
 
 .btn {
-    width: 80%;
+    /* width: 80%; */
     text-align: right;
+}
+
+.btn p {
+    font-size: 16px;
+    font-family: Open Sans, Regular;
 }
 
 
@@ -66,42 +81,36 @@ form input {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  
     @media screen and (max-width: 840px) {
         main {
             padding: 0 1.5rem;
         }
-    
     }
-    .form {
-        padding: 6rem 9rem 4rem 8rem;
+    .form{
+        padding-top: 16px;
     }
-
-}
-
-@media screen and (max-width: 528px) {
-    body {
-        /* background-color: orange; */
+    .form > div {
+        text-align: end;
+        width: 85%;
     }
 
-    .form {
-        padding: 6rem 0rem 4rem 0rem;
-        /* text-align: center; */
-        width: 40rem;
-        margin: auto;
+    .form > div {
+        text-align: start;
     }
 
     .form input {
         width: 90%;
         padding: 1rem 1.5rem;
-        border-radius: 1rem;
     }
-    .form button{
-        border-radius: 1rem;
+    
+    .form button {
         padding: 1.3rem;
-        width: 101%;
-        
+        width: 97%;
+    
     }
+}
 
-  
+@media screen and (max-width: 556px) {
+
 }

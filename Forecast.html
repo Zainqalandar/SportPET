@@ -16,24 +16,26 @@
 <body>
     <!-- Header  -->
     <header>
-        <nav>
-            <div class="navbar">
-                <div class="logo">
-                    <img src="Sportpets-logo.png" alt="">
-                </div>
-                <ul class="nav-ul">
-                    <li>Shipping</li>
-                    <li>Inventory</li>
-                    <li>Customer Sevices</li>
-                    <li>Adinistrative</li>
-                    <li><span id="user" class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                    </li>
-                </ul>
-                <button><img src="4781852_burger_line_list_menu_nav_icon.png" alt=""></button>
+        <div class="navbar">
+            <div class="logo">
+                <a href="Authlogin.html"><img src="Sportpets-logo.png" alt=""></a>
             </div>
-        </nav>
+            <ul class="nav-ul">
+                <a href="Welcome.html">
+                    <li>Shipping</li>
+                </a>
+                <a href="Inventory.html">
+                    <li>Inventory</li>
+                </a>
+                <li>Customer Sevices</li>
+                <li>Adinistrative</li>
+                <li><span id="user" class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </li>
+            </ul>
+            <button><img src="4781852_burger_line_list_menu_nav_icon.png" alt=""></button>
+        </div>
         <!-- <div style="border: 1px solid black; width: 89rem; margin: auto;"></div> -->
         <div class="header-banner">
             <img src="Screenshot from 2023-11-29 10-38-29.png" alt="">
@@ -49,18 +51,14 @@
             <div class="detail">
                 <form action="">
                     <div class="detail_form">
-                        <div>
-                            <label for="year">Year</label>
-                            <select id="year" name="year">
-                                <option value="2023">Select</option>
-                                <option value="2023">2023</option>
-                                <option value="2022">2022</option>
-                            </select>
-                        </div>
-                        <div class="detai-form-child">
+                        <div class="year-box">
                             <div>
-                                <label for="">Item Number</label>
-                                <input type="text" name="" value="13-3413-68" id="">
+                                <label for="year">Year</label>
+                                <select id="year" name="year">
+                                    <option id="first-child" value="2023">&nbsp;Select</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                </select>
                             </div>
                             <div>
                                 <span class="material-symbols-outlined">
@@ -70,8 +68,21 @@
                         </div>
                         <div class="detai-form-child">
                             <div>
+                                <label for="">Item Number</label>
+                                <select name="" id="">
+                                    <option value="">&nbsp;&nbsp;13-3414-68</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+                            </div>
+                        </div>
+                        <div class="detai-form-child" id="smart-btn-box">
+                            <div>
                                 <label for="">Quantity</label>
-                                <input type="text" value="Enter QTY" name="" id="Quantity">
+                                <input type="text" name="" id="" placeholder=" Enter QTY">
                             </div>
                             <!-- <div>
                                 <span class="material-symbols-outlined">
@@ -92,141 +103,143 @@
                 </div>
 
                 <!-- table  -->
-                <table class="red-header">
-                    <thead>
-                        <tr>
-                            <th>Week</th>
-                            <th>Forecast 2023</th>
-                            <th>Order Summary 2023</th>
-                            <th>Forecast 2022</th>
-                            <th>Order Summary 2022</th>
-                            <th>Note</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>weak 1</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <!-- Add more rows here -->
-                        <tr>
-                            <td>weak 2</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 3</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 4</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 5</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 6</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 7</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 8</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 9</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 10</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 11</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 12</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 13</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 14</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>weak 15</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="scroll-x">
+                    <table class="red-header">
+                        <thead>
+                            <tr>
+                                <th>Week</th>
+                                <th>Forecast 2023</th>
+                                <th>Order Summary 2023</th>
+                                <th>Forecast 2022</th>
+                                <th>Order Summary 2022</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>weak 1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- Add more rows here -->
+                            <tr>
+                                <td>weak 2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 4</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 6</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 7</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 8</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 9</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 13</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 14</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>weak 15</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
@@ -240,10 +253,10 @@
             <div class="about-footer">
                 <div>
                     <ul class="footer-ul">
-                        <li>Shipping</li>
-                        <li>Inventory</li>
-                        <li>Customer Sevices</li>
-                        <li>Adinistrative</li>
+                        <li><a href="Welcome.html">Shipping</a></li>
+                        <li><a href="Inventory.html">Inventory</a></li>
+                        <li><a href="Forecast.html">Customer Sevices</a></li>
+                        <li><a href="Bycategory.html">Adinistrative</a></li>
                         <li><span id="user2" class="material-symbols-outlined">
                                 account_circle
                             </span></li>

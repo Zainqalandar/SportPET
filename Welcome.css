@@ -1,6 +1,7 @@
-.header-banner::after {
+main::after{
     content: "Welcome, Justin";
 }
+
 
 .grid__2__cols {
     grid-template-columns: repeat(2, 1fr);
