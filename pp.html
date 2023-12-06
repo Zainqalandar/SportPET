@@ -1,150 +1,38 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Form</title>
-	<style>
-		.red-header {
-			border-collapse: collapse;
-			width: 100%;
-		}
-
-		.red-header th {
-			background-color: #AA182C;
-			border: 1px solid #AA182C;
-			color: white;
-			font-weight: bold;
-			padding: 8px;
-			text-align: left;
-		}
-
-		.red-header td {
-			border-bottom: 1px solid #AA182C;
-			padding: 8px;
-		}
-
-		tbody {
-			border: 1px solid #AA182C;
-		}
-		tr:nth-child(even){
-			background: #F7ECEE 0% 0% no-repeat padding-box;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header and Footer</title>
+    <style>
+       .container{
+		border: 2px solid black;
+		width: 70%;
+		height: 400px;
+		margin: 0px auto;
+		background-color: yellow;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	   }
+	   .container div{
+		border: 1px solid red;
+		background-color: green;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	   }
+    </style>
 </head>
-
 <body>
-	<table class="red-header">
-		<thead>
-			<tr>
-				<th>Week</th>
-				<th>Forecast 2023</th>
-				<th>Order Summary 2023</th>
-				<th>Forecast 2022</th>
-				<th>Order Summary 2022</th>
-				<th>Note</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>weak 1</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- Add more rows here -->
-			<tr>
-				<td>weak 2</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 3</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 4</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 5</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 6</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 7</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 8</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 9</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 10</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 11</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>weak 12</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</tbody>
-	</table>
-
+    <div class="container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+	</div>
 </body>
-
 </html>

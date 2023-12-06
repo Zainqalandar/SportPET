@@ -28,31 +28,16 @@
                     </a>
                     <li>Customer Sevices</li>
                     <li>Adinistrative</li>
-                    <li><span id="user" class="material-symbols-outlined">
+                    <li id="user" tabindex="0"><span   class="material-symbols-outlined">
                             account_circle
                         </span>
                     </li>
                     <div class="user-bottom">
                         <p>Account Information</p>
                         <p>Change Password</p>
-                        <p>Logout</p>
+                        <a href="Authlogin.html"><p>Logout</p></a>
                     </div>
                 </ul>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        var toggleButton = document.getElementById("user");
-                        var contentDiv = document.getElementsByClassName("user-bottom")[0];
-
-                        toggleButton.addEventListener("click", function () {
-                            if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
-                                contentDiv.style.display = "block";
-                            } else {
-                                contentDiv.style.display = "none";
-                            }
-                            console.log('user information')
-                        });
-                    });
-                </script>
                 <button><img src="4781852_burger_line_list_menu_nav_icon.png" alt=""></button>
             </div>
         </nav>
@@ -75,8 +60,8 @@
                                 <label for="year">Year</label>
                                 <select id="year" name="year">
                                     <option style="display: none;" value="2023">&nbspSelect</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2022">2022</option>
+                                    <option value="2023">&nbsp2023</option>
+                                    <option value="2022">&nbsp2022</option>
                                 </select>
                             </div>
                             <div>
@@ -153,10 +138,10 @@
                                 <th>Start</th>
                                 <th>End</th>
                                 <th>On Hand Total</th>
-                                <th>Order [ order sum + alloc + open ]</th>
-                                <th>Unconfirmed [ POP 10110 ]</th>
-                                <th>Confirm [Vender]</th>
-                                <th>On Water [ Shipping Recap ]</th>
+                                <th>Order <span>[ order sum + alloc + open ]</span></th>
+                                <th>Unconfirmed <span>[ POP 10110 ]</span></th>
+                                <th>Confirm <span>[Vender]</span></th>
+                                <th>On Water <span>[ Shipping Recap ]</span></th>
                                 <th>Total Stack</th>
                                 <th>Forcast</th>
                                 <th>Net QTY</th>
